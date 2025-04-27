@@ -26,9 +26,9 @@
 
 ## 2 | Method in Brief  
 
-1. **Business case** — profit uplift & loyalty expansion.  
+1. **Business case** — Profit uplift & loyalty expansion.  
 2. **Re-calibrated KPIs** — Contribution $, Repeat-Order %, Promo ROI, Category Gross-Margin %, Regional Rev-Share.  
-3. **Data curation** — seven stakeholder workbooks (promo, tiering, margin, region, seasonality, …).  
+3. **Data curation** — Seven SQL Script (promo, tiering, margin, region, seasonality, …).  
 4. **Prep & QA** — SQL CTEs for cohort tagging & spend buckets; row-count validation vs source files.  
 5. **Analysis & viz** — Authored seven SQL scripts (appendix A) and produced for review. 
   
@@ -36,9 +36,9 @@
 
 ## 3 | Key Insights (STAR Framework)  
 
-| **Situation / Task**                               | **Action**                                             | **Result / Business Meaning**                                                                           |
+| **Situation / Task**                               | **Action**                                             | **Result**                                                                           |
 |----------------------------------------------------|--------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Revenue concentration — quantify spend tiers       | Classified 3 674 customers into four lifetime-GMV tiers| *Goldmine* (4.2 %) drives 87 % of revenue; long-tail < AU $100 contributes only 3.2 %                    |
+| Revenue concentration — quantify spend tiers       | Classified 3,674 customers into four lifetime-GMV tiers| *Goldmine* (4.2 %) drives 87 % of revenue; long-tail < AU $100 contributes only 3.2 %                    |
 | Promo dilution — assess 2020 sale impact           | Joined `ItemMarkupHistory.sale = TRUE` to 2020 orders  | Markdowns moved 37.7 % of units, just 5 % of revenue; margin drag **AU $1.3 m**                          |
 | Assortment economics — link mix to margin          | Merged `ItemsInOrder` → `CategoryMarginTable`          | Food yields **50.7 % margin**; House/Home over-indexed at 86 % GMV                                       |
 | Lifecycle health — measure new vs repeat           | Derived first-vs-repeat flags per month               | Repeat share 56.1 % (2020) — sticky CX but softening acquisition                                        |
